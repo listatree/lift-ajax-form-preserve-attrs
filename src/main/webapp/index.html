@@ -1,14 +1,35 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title></head>
+  <head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title>
+  </head>
   <body class="lift:content_id=main">
     <div id="main" class="lift:surround?with=default;at=content">
-      <h2>Welcome to your project!</h2>
-      <p>
-	<span class="lift:helloWorld.howdy">
-	  Welcome to your Lift app at <span id="time">Time goes here</span>
-	</span>
-      </p>
+
+    <style type="text/css" class="lift:head">
+      .blue {
+        color: blue;
+     }
+    </style>
+      
+      <h2>An ajax form with preserves the original form attributes (in this case a class attribute)</h2>
+
+      <div class="lift:Msgs?showAll=true"></div>
+
+      <form class="blue" data-lift="formAjax">
+        <div class="lift:simpleTest"
+        <p>
+        <label for="first_name">First name:</label>
+        <input id="first_name" name="first_name" />
+        </p>
+        <p>
+        <label for="last_name">Last name:</label>
+        <input id="last_name" name="last_name" />
+        </p>
+        <p>
+        <input type="submit" value="Test"/>
+        </p>
+      </form>
+
     </div>
   </body>
 </html>
